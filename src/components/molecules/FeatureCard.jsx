@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import ApperIcon from "@/components/ApperIcon";
-import { cn } from "@/lib/utils";
 import React from "react";
+import ApperIcon from "@/components/ApperIcon";
+import { cn } from "@/utils/cn";
+
 const FeatureCard = ({ icon, title, description, isHighlighted = false }) => {
   return (
     <motion.div
