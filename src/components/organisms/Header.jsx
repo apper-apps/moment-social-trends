@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "@/components/atoms/Button";
 import ApperIcon from "@/components/ApperIcon";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   const navItems = [
     { name: "Features", href: "#features" },
     { name: "Pricing", href: "#pricing" },
@@ -45,9 +46,13 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
+{/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
+            <Button 
+              variant="ghost" 
+              size="sm"
+              onClick={() => navigate('/signin')}
+            >
               Sign In
             </Button>
             <Button size="sm">
@@ -89,9 +94,16 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              
-              <div className="pt-4 space-y-3 border-t border-gray-200">
-                <Button variant="ghost" size="sm" className="w-full">
+<div className="pt-4 space-y-3 border-t border-gray-200">
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="w-full"
+                  onClick={() => {
+                    navigate('/signin');
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
                   Sign In
                 </Button>
                 <Button size="sm" className="w-full">
