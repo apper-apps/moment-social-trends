@@ -97,13 +97,13 @@ const FAQSection = () => {
                         className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto">
                         <MessageCircle className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 font-display">Still Have Questions?
+<h3 className="text-xl font-bold text-gray-900 font-display">Still Have Questions?
                                       </h3>
-                    <p className="text-gray-600">Book a personalized demo and see how Social Trends can transform your content marketing.
-                        <p className="text-gray-600 text-sm sm:text-base">
-                            <Button size="lg" className="w-full">Book a Demo
-                                              </Button>
-                        </p></p></div>
+                    <p className="text-gray-600">Book a personalized demo and see how Social Trends can transform your content marketing.</p>
+                    <div className="text-gray-600 text-sm sm:text-base">
+                        <Button size="lg" className="w-full">Book a Demo</Button>
+                    </div>
+                </div>
             </motion.div>
         </div>
     </div>
