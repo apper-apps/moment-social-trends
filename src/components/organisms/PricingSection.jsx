@@ -3,7 +3,7 @@ import PricingCard from "@/components/molecules/PricingCard";
 import ApperIcon from "@/components/ApperIcon";
 
 const PricingSection = () => {
-  const plans = [
+const plans = [
     {
       name: "Starter",
       price: 0,
@@ -19,6 +19,21 @@ const PricingSection = () => {
       isPopular: false
     },
     {
+      name: "Solopreneur",
+      price: 29.99,
+      billing: "month",
+      features: [
+        "10 trend monitoring per month",
+        "Advanced content generation",
+        "2 brand voice profiles",
+        "Auto-publishing to 3 channels",
+        "Performance analytics",
+        "Email support"
+      ],
+      ctaText: "Start Free Trial",
+      isPopular: true
+    },
+    {
       name: "Creator", 
       price: 49,
       billing: "month",
@@ -31,7 +46,7 @@ const PricingSection = () => {
         "Email support"
       ],
       ctaText: "Start Free Trial",
-      isPopular: true
+      isPopular: false
     },
     {
       name: "Business",
@@ -76,7 +91,7 @@ const PricingSection = () => {
           </p>
         </motion.div>
 
-<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-8 lg:mb-12">
+<div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 mb-8 lg:mb-12">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -124,27 +139,29 @@ className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8 te
 <div className="overflow-x-auto -mx-4 sm:mx-0">
 <table className="w-full min-w-[600px] sm:min-w-0">
                 <thead>
-                  <tr className="border-b border-gray-200">
+<tr className="border-b border-gray-200">
                     <th className="text-left py-3 px-4 sm:py-4 sm:px-6 font-semibold text-gray-900 text-sm sm:text-base">Features</th>
-                    <th className="text-center py-3 px-2 sm:py-4 sm:px-6 font-semibold text-gray-900 text-xs sm:text-base">Starter</th>
-                    <th className="text-center py-3 px-2 sm:py-4 sm:px-6 font-semibold gradient-text text-xs sm:text-base">Creator</th>
-                    <th className="text-center py-3 px-2 sm:py-4 sm:px-6 font-semibold text-gray-900 text-xs sm:text-base">Business</th>
+                    <th className="text-center py-3 px-1 sm:py-4 sm:px-3 font-semibold text-gray-900 text-xs sm:text-base">Starter</th>
+                    <th className="text-center py-3 px-1 sm:py-4 sm:px-3 font-semibold gradient-text text-xs sm:text-base">Solopreneur</th>
+                    <th className="text-center py-3 px-1 sm:py-4 sm:px-3 font-semibold text-gray-900 text-xs sm:text-base">Creator</th>
+                    <th className="text-center py-3 px-1 sm:py-4 sm:px-3 font-semibold text-gray-900 text-xs sm:text-base">Business</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                   {[
-                    ["Trend Reports", "5/month", "Unlimited", "Unlimited"],
-                    ["Brand Voice Profiles", "1", "3", "Unlimited"], 
-                    ["Publishing Channels", "Manual", "5 Channels", "All Channels"],
-                    ["Performance Analytics", "Basic", "Advanced", "Advanced + Reporting"],
-                    ["Team Collaboration", "✗", "✗", "✓"],
-                    ["Priority Support", "✗", "✗", "✓"]
+                    ["Trend Reports", "5/month", "10/month", "Unlimited", "Unlimited"],
+                    ["Brand Voice Profiles", "1", "2", "3", "Unlimited"], 
+                    ["Publishing Channels", "Manual", "3 Channels", "5 Channels", "All Channels"],
+                    ["Performance Analytics", "Basic", "Advanced", "Advanced", "Advanced + Reporting"],
+                    ["Team Collaboration", "✗", "✗", "✗", "✓"],
+                    ["Priority Support", "✗", "✗", "✗", "✓"]
                   ].map((row, index) => (
-<tr key={row[0]}>
+                    <tr key={row[0]}>
                       <td className="py-3 px-4 sm:py-4 sm:px-6 font-medium text-gray-900 text-sm sm:text-base">{row[0]}</td>
-                      <td className="py-3 px-2 sm:py-4 sm:px-6 text-center text-gray-600 text-xs sm:text-base">{row[1]}</td>
-                      <td className="py-3 px-2 sm:py-4 sm:px-6 text-center font-semibold text-primary text-xs sm:text-base">{row[2]}</td>
-                      <td className="py-3 px-2 sm:py-4 sm:px-6 text-center text-gray-600 text-xs sm:text-base">{row[3]}</td>
+                      <td className="py-3 px-1 sm:py-4 sm:px-3 text-center text-gray-600 text-xs sm:text-base">{row[1]}</td>
+                      <td className="py-3 px-1 sm:py-4 sm:px-3 text-center font-semibold text-primary text-xs sm:text-base">{row[2]}</td>
+                      <td className="py-3 px-1 sm:py-4 sm:px-3 text-center text-gray-600 text-xs sm:text-base">{row[3]}</td>
+                      <td className="py-3 px-1 sm:py-4 sm:px-3 text-center text-gray-600 text-xs sm:text-base">{row[4]}</td>
                     </tr>
                   ))}
                 </tbody>
