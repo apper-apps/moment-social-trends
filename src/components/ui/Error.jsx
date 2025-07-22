@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Button from "@/components/atoms/Button";
+import { Button } from "@/components/atoms/Button";
 import ApperIcon from "@/components/ApperIcon";
 
 const Error = ({ message = "Something went wrong", onRetry }) => {
