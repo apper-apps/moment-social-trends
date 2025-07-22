@@ -12,7 +12,7 @@ const FinalCTASection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/10 via-surface to-secondary/10 relative overflow-hidden">
+<section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-primary/10 via-surface to-secondary/10 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary rounded-full blur-3xl"></div>
@@ -30,7 +30,7 @@ const FinalCTASection = () => {
         >
           <div className="space-y-6">
             <motion.h2 
-              className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight font-display"
+className="text-2xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-gray-900 leading-tight font-display"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -41,7 +41,7 @@ const FinalCTASection = () => {
             </motion.h2>
             
             <motion.p 
-              className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto"
+className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -53,19 +53,19 @@ const FinalCTASection = () => {
           </div>
 
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <Button size="xl" className="group text-lg px-12 py-5">
+<Button size="xl" className="group text-base lg:text-lg px-8 sm:px-12 py-4 lg:py-5 w-full sm:w-auto min-h-[48px]">
               Start Your Free 14-Day Trial
-              <ApperIcon name="ArrowRight" className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+              <ApperIcon name="ArrowRight" className="ml-2 w-5 h-5 lg:w-6 lg:h-6 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button variant="secondary" size="xl" className="group text-lg px-12 py-5">
-              <ApperIcon name="Play" className="mr-2 w-6 h-6" />
+            <Button variant="secondary" size="xl" className="group text-base lg:text-lg px-8 sm:px-12 py-4 lg:py-5 w-full sm:w-auto min-h-[48px]">
+              <ApperIcon name="Play" className="mr-2 w-5 h-5 lg:w-6 lg:h-6" />
               Watch Demo
             </Button>
           </motion.div>
@@ -76,7 +76,7 @@ const FinalCTASection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-3xl mx-auto pt-8"
+className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-3xl mx-auto pt-8"
           >
             {trustSignals.map((signal, index) => (
               <motion.div
@@ -103,7 +103,7 @@ const FinalCTASection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
-            className="pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8"
+className="pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-8"
           >
             <div className="flex items-center space-x-2">
               <div className="flex -space-x-2">

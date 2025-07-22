@@ -11,10 +11,10 @@ import Footer from "@/components/organisms/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Header />
       
-      <main>
+      <main className="pt-16">
         <HeroSection />
         <ProblemSection />
         <section id="features">

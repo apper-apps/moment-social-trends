@@ -40,7 +40,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+<section className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,17 +49,17 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           className="text-center space-y-6 mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-display">
+<h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 font-display">
             Everything You Need to{" "}
             <span className="gradient-text">Dominate Content Marketing</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            The only platform that combines real-time social listening with AI content generation 
+<p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            The only platform that combines real-time social listening with AI content generation
             and strategic distribution in one intelligent ecosystem.
           </p>
         </motion.div>
 
-        <div className="grid gap-8 lg:gap-12">
+<div className="grid gap-6 lg:gap-8 xl:gap-12">
           {/* Real-time Intelligence */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -68,15 +68,15 @@ const FeaturesSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-gradient-to-r from-primary/10 via-surface to-secondary/10 rounded-3xl p-8 lg:p-12 border border-primary/20">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+<div className="bg-gradient-to-r from-primary/10 via-surface to-secondary/10 rounded-3xl p-6 sm:p-8 lg:p-12 border border-primary/20">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
                   <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-full text-sm font-medium">
                     <ApperIcon name="Zap" className="w-4 h-4 mr-2" />
                     {features[0].badge}
                   </div>
                   
-                  <h3 className="text-3xl font-bold text-gray-900 font-display">
+<h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 font-display">
                     {features[0].title}
                   </h3>
                   
@@ -132,8 +132,8 @@ const FeaturesSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="bg-surface rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-200">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+<div className="bg-surface rounded-3xl p-6 sm:p-8 lg:p-12 shadow-xl border border-gray-200">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 {/* Brand Voice Dashboard */}
                 <div className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl p-6 border border-accent/20">
                   <h4 className="font-semibold text-gray-900 mb-4">Brand Voice Analysis</h4>
@@ -164,7 +164,7 @@ const FeaturesSection = () => {
                 </div>
                 
                 <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-gray-900 font-display">
+<h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 font-display">
                     {features[1].title}
                   </h3>
                   
@@ -201,9 +201,9 @@ const FeaturesSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <div className="bg-gradient-to-br from-secondary/10 via-surface to-primary/10 rounded-3xl p-8 lg:p-12 border border-secondary/20">
-              <div className="text-center space-y-6 mb-12">
-                <h3 className="text-3xl font-bold text-gray-900 font-display">
+<div className="bg-gradient-to-br from-secondary/10 via-surface to-primary/10 rounded-3xl p-6 sm:p-8 lg:p-12 border border-secondary/20">
+              <div className="text-center space-y-6 mb-8 lg:mb-12">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 font-display">
                   {features[2].title}
                 </h3>
                 <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
@@ -211,7 +211,7 @@ const FeaturesSection = () => {
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-3 gap-6">
+<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {features[2].cards.map((card, index) => (
                   <motion.div
                     key={index}
@@ -220,7 +220,7 @@ const FeaturesSection = () => {
                     transition={{ delay: index * 0.1 }}
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.05 }}
-                    className="bg-surface rounded-xl p-6 shadow-lg border border-gray-200 hover:border-secondary/30 transition-all duration-200"
+className="bg-surface rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:border-secondary/30 transition-all duration-200"
                   >
                     <p className="text-gray-700 font-medium">{card}</p>
                   </motion.div>
@@ -236,10 +236,10 @@ const FeaturesSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="bg-surface rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-200">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+<div className="bg-surface rounded-3xl p-6 sm:p-8 lg:p-12 shadow-xl border border-gray-200">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div className="space-y-6">
-                  <h3 className="text-3xl font-bold text-gray-900 font-display">
+<h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 font-display">
                     {features[3].title}
                   </h3>
                   

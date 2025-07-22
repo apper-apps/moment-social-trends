@@ -21,14 +21,14 @@ const Header = () => {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-gray-200"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center">
               <ApperIcon name="TrendingUp" className="w-6 h-6 text-white" />
             </div>
-            <span className="text-xl font-bold gradient-text font-display">
+<span className="text-lg sm:text-xl font-bold gradient-text font-display">
               Social Trends
             </span>
           </div>
@@ -46,24 +46,24 @@ const Header = () => {
             ))}
           </nav>
 
-{/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+<div className="hidden md:flex items-center space-x-3 lg:space-x-4">
             <Button 
               variant="ghost" 
               size="sm"
               onClick={() => navigate('/signin')}
+              className="min-h-[40px]"
             >
-              Sign In
+              <span className="text-sm lg:text-base">Sign In</span>
             </Button>
-            <Button size="sm">
-              Start Free Trial
+            <Button size="sm" className="min-h-[40px]">
+              <span className="text-sm lg:text-base">Start Free Trial</span>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
+<button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             <ApperIcon 
               name={isMobileMenuOpen ? "X" : "Menu"} 
@@ -83,7 +83,7 @@ const Header = () => {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-surface border-t border-gray-200"
           >
-            <div className="px-4 py-4 space-y-4">
+<div className="px-4 py-4 space-y-3">
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -98,7 +98,7 @@ const Header = () => {
                 <Button 
                   variant="ghost" 
                   size="sm" 
-                  className="w-full"
+                  className="w-full min-h-[44px] text-base"
                   onClick={() => {
                     navigate('/signin');
                     setIsMobileMenuOpen(false);
@@ -106,7 +106,7 @@ const Header = () => {
                 >
                   Sign In
                 </Button>
-                <Button size="sm" className="w-full">
+                <Button size="sm" className="w-full min-h-[44px] text-base">
                   Start Free Trial
                 </Button>
               </div>

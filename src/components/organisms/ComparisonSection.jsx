@@ -28,7 +28,7 @@ const ComparisonSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-surface">
+<section className="py-12 sm:py-16 lg:py-20 bg-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ const ComparisonSection = () => {
           viewport={{ once: true }}
           className="text-center space-y-6 mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-display">
+<h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 font-display">
             Why Social Trends Beats{" "}
             <span className="gradient-text">Every Alternative</span>
           </h2>
@@ -46,7 +46,7 @@ const ComparisonSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16">
           {comparisons.map((comp, index) => (
             <motion.div
               key={comp.category}
@@ -112,7 +112,7 @@ const ComparisonSection = () => {
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-3 gap-6">
+<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   className="bg-surface rounded-xl p-6 shadow-lg border border-primary/20"

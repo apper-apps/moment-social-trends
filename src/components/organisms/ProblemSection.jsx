@@ -3,7 +3,7 @@ import ApperIcon from "@/components/ApperIcon";
 
 const ProblemSection = () => {
   return (
-    <section className="py-20 bg-surface">
+<section className="py-12 sm:py-16 lg:py-20 bg-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -13,12 +13,12 @@ const ProblemSection = () => {
           className="text-center space-y-12"
         >
           <div className="space-y-6">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-display">
+<h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 font-display">
               The Content Marketing Disconnect That's{" "}
               <span className="gradient-text">Costing You Growth</span>
             </h2>
             
-            <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-600 leading-relaxed">
+<div className="max-w-4xl mx-auto space-y-6 text-base sm:text-lg text-gray-600 leading-relaxed">
               <p>
                 You know content marketing drives results, but you're stuck in a cycle of guesswork. 
                 You create content hoping it will resonate, but without real-time audience insights, 
@@ -45,11 +45,11 @@ const ProblemSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 gap-12 mt-16"
+className="grid md:grid-cols-2 gap-8 lg:gap-12 mt-12 lg:mt-16"
           >
             {/* Fragmented Workflow */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-gray-900 font-display">
+<h3 className="text-xl sm:text-2xl font-bold text-gray-900 font-display">
                 Current Fragmented Workflow
               </h3>
               
@@ -79,7 +79,7 @@ const ProblemSection = () => {
 
             {/* Unified Approach */}
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold gradient-text font-display">
+<h3 className="text-xl sm:text-2xl font-bold gradient-text font-display">
                 Social Trends Unified Approach
               </h3>
               

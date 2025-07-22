@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import Button from "@/components/atoms/Button";
+import React from "react";
 import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
 
 const HeroSection = () => {
   const socialIcons = [
@@ -12,9 +13,9 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-surface to-primary/5 min-h-screen flex items-center">
+<section className="relative overflow-hidden bg-gradient-to-br from-background via-surface to-primary/5 min-h-screen flex items-center">
       {/* Floating Social Icons */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden lg:block">
         {socialIcons.map((icon, index) => (
           <motion.div
             key={icon.name}
@@ -45,8 +46,8 @@ const HeroSection = () => {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -55,8 +56,8 @@ const HeroSection = () => {
             className="space-y-8"
           >
             <div className="space-y-6">
-              <motion.h1 
-                className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight font-display"
+<motion.h1 
+                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight font-display"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
@@ -65,8 +66,8 @@ const HeroSection = () => {
                 <span className="gradient-text">Content That Converts</span>
               </motion.h1>
               
-              <motion.p 
-                className="text-xl text-gray-600 leading-relaxed max-w-2xl"
+<motion.p 
+                className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
@@ -87,30 +88,30 @@ const HeroSection = () => {
               </motion.p>
             </div>
 
-            <motion.div 
-              className="flex flex-col sm:flex-row gap-4"
+<motion.div 
+              className="flex flex-col sm:flex-row gap-4 items-start sm:items-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              <Button size="xl" className="group">
-                Start Your Free Strategy Session
+<Button size="xl" className="group w-full sm:w-auto min-h-[48px]">
+                <span className="text-sm sm:text-base">Start Your Free Strategy Session</span>
                 <ApperIcon name="ArrowRight" className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
-              <Button variant="secondary" size="xl" className="group">
+              <Button variant="secondary" size="xl" className="group w-full sm:w-auto min-h-[48px]">
                 <ApperIcon name="Play" className="mr-2 w-5 h-5" />
-                Watch 2-Minute Demo
+                <span className="text-sm sm:text-base">Watch 2-Minute Demo</span>
               </Button>
             </motion.div>
           </motion.div>
 
           {/* Right Content - Dashboard Mockup */}
-          <motion.div
+<motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
+            className="relative mt-8 lg:mt-0"
           >
             <div className="relative bg-surface rounded-3xl shadow-2xl border border-gray-200 overflow-hidden">
               {/* Dashboard Header */}

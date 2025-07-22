@@ -58,7 +58,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-surface">
+<section className="py-12 sm:py-16 lg:py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ const PricingSection = () => {
           viewport={{ once: true }}
           className="text-center space-y-6 mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-display">
+<h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 font-display">
             Choose Your{" "}
             <span className="gradient-text">Growth Plan</span>
           </h2>
@@ -76,7 +76,7 @@ const PricingSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-8 lg:mb-12">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -96,7 +96,7 @@ const PricingSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="flex flex-wrap items-center justify-center gap-8 text-gray-600"
+className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8 text-gray-600"
         >
           {trustSignals.map((signal, index) => (
             <div key={signal.text} className="flex items-center space-x-2">
@@ -121,14 +121,14 @@ const PricingSection = () => {
               Compare Features
             </h3>
             
-            <div className="overflow-x-auto">
-              <table className="w-full">
+<div className="overflow-x-auto -mx-4 sm:mx-0">
+<table className="w-full min-w-[600px] sm:min-w-0">
                 <thead>
                   <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 px-6 font-semibold text-gray-900">Features</th>
-                    <th className="text-center py-4 px-6 font-semibold text-gray-900">Starter</th>
-                    <th className="text-center py-4 px-6 font-semibold gradient-text">Creator</th>
-                    <th className="text-center py-4 px-6 font-semibold text-gray-900">Business</th>
+                    <th className="text-left py-3 px-4 sm:py-4 sm:px-6 font-semibold text-gray-900 text-sm sm:text-base">Features</th>
+                    <th className="text-center py-3 px-2 sm:py-4 sm:px-6 font-semibold text-gray-900 text-xs sm:text-base">Starter</th>
+                    <th className="text-center py-3 px-2 sm:py-4 sm:px-6 font-semibold gradient-text text-xs sm:text-base">Creator</th>
+                    <th className="text-center py-3 px-2 sm:py-4 sm:px-6 font-semibold text-gray-900 text-xs sm:text-base">Business</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
@@ -140,11 +140,11 @@ const PricingSection = () => {
                     ["Team Collaboration", "✗", "✗", "✓"],
                     ["Priority Support", "✗", "✗", "✓"]
                   ].map((row, index) => (
-                    <tr key={row[0]}>
-                      <td className="py-4 px-6 font-medium text-gray-900">{row[0]}</td>
-                      <td className="py-4 px-6 text-center text-gray-600">{row[1]}</td>
-                      <td className="py-4 px-6 text-center font-semibold text-primary">{row[2]}</td>
-                      <td className="py-4 px-6 text-center text-gray-600">{row[3]}</td>
+<tr key={row[0]}>
+                      <td className="py-3 px-4 sm:py-4 sm:px-6 font-medium text-gray-900 text-sm sm:text-base">{row[0]}</td>
+                      <td className="py-3 px-2 sm:py-4 sm:px-6 text-center text-gray-600 text-xs sm:text-base">{row[1]}</td>
+                      <td className="py-3 px-2 sm:py-4 sm:px-6 text-center font-semibold text-primary text-xs sm:text-base">{row[2]}</td>
+                      <td className="py-3 px-2 sm:py-4 sm:px-6 text-center text-gray-600 text-xs sm:text-base">{row[3]}</td>
                     </tr>
                   ))}
                 </tbody>

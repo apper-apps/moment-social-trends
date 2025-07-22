@@ -85,5 +85,15 @@ body {
 /* Parallax container */
 .parallax-container {
   overflow: hidden;
-  position: relative;
+position: relative;
+}
+
+/* Hide scrollbar for mobile workflow elements */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+<section className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Client Logos */}
         <motion.div
@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
             Trusted by 10,000+ Content Creators and Marketing Teams
           </p>
           
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-50">
+<div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8 opacity-50">
             {clientLogos.map((logo, index) => (
               <motion.div
                 key={logo}
@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
           className="space-y-12"
         >
           <div className="text-center space-y-6">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 font-display">
+<h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 font-display">
               What Our Users Are{" "}
               <span className="gradient-text">Saying</span>
             </h2>
@@ -86,8 +86,8 @@ const TestimonialsSection = () => {
             </p>
           </div>
 
-          {/* Testimonial Carousel */}
-          <div className="relative">
+{/* Testimonial Carousel */}
+          <div className="relative px-4 sm:px-0">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentTestimonial}
