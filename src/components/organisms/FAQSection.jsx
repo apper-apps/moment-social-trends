@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import FAQItem from "@/components/molecules/FAQItem";
 import Button from "@/components/atoms/Button";
-import Icon from "@/components/atoms/Icon";
+import { MessageCircle } from "lucide-react";
 import React from "react";
 
 const FAQSection = () => {
@@ -60,25 +60,23 @@ const FAQSection = () => {
           </div>
 
           {/* CTA Card */}
-          <motion.div
+<motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
             className="lg:sticky lg:top-8"
-className="lg:sticky lg:top-8"
           >
             <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 border border-primary/20 text-center space-y-6">
               <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto">
-                <Icon name="MessageCircle" className="w-8 h-8 text-white" />
+                <MessageCircle className="w-8 h-8 text-white" />
               </div>
-                <h3 className="text-xl font-bold text-gray-900 font-display">
-                  Still Have Questions?
-                </h3>
-                <p className="text-gray-600">
-                  Book a personalized demo and see how Social Trends can transform your content marketing.
-                </p>
-              </div>
+              <h3 className="text-xl font-bold text-gray-900 font-display">
+                Still Have Questions?
+              </h3>
+              <p className="text-gray-600">
+                Book a personalized demo and see how Social Trends can transform your content marketing.
+              </p>
               
               <Button size="lg" className="w-full">
                 Book a Demo
